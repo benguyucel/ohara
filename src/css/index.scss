@@ -78,7 +78,6 @@ body {
     background-color: #fff;
 
     &.fixed-left {
-        display: none;
         position: fixed;
         z-index: 1;
         width: 280px;
@@ -376,7 +375,6 @@ body {
     transition: all 1s ease-in-out;
 
     &.fixed-right {
-        display: none;
 
         transition: all 1s ease-in-out;
         background-color: #fff;
