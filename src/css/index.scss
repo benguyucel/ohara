@@ -15,6 +15,13 @@ body {
         .course-item {
             flex: 0 0 100% !important;
         }
+       
+    }
+    .ttb-content{
+        flex-direction: column !important;
+        .tab{
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -71,6 +78,7 @@ body {
     background-color: #fff;
 
     &.fixed-left {
+        display: none;
         position: fixed;
         z-index: 1;
         width: 280px;
@@ -368,6 +376,8 @@ body {
     transition: all 1s ease-in-out;
 
     &.fixed-right {
+        display: none;
+
         transition: all 1s ease-in-out;
         background-color: #fff;
         position: fixed;
