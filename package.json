@@ -1,0 +1,35 @@
+{
+  "name": "my-project",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.1.1",
+    "cssnano": "^5.0.15",
+    "parcel": "^2.1.1",
+    "parcel-plugin-structurize": "^2.4.4",
+    "postcss": "^8.4.5"
+  },
+  "mode": "production",
+  "parcel-plugin-structurize": {
+    "verbose": false,
+    "rules": [{
+        "match": "*.js",
+        "folder": "js",
+        "flatten": false
+      },
+      {
+        "match": "*.css",
+        "folder": "css",
+        "flatten": false
+      },
+      {
+        "match": "*.{jpg,jpeg,jpeg2,png,gif,svg,bmp,webp}",
+        "folder": "assets",
+        "flatten": false
+      }
+    ]
+  }
+}
